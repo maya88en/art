@@ -11,7 +11,7 @@ code {
   font-family: 'Sora', 'Outfit';
 }
 
-.display-section.wrapper {
+/* .display-section.wrapper {
   margin-left: auto;
   margin-right: auto;
   max-width: 980px;
@@ -22,8 +22,6 @@ code {
   padding: 50px 0 40px 0;
   height: 70vh;
   box-sizing: border-box;
-  position: relative; 
-  z-index: 1;
 }
 
 .display-section .title {
@@ -32,14 +30,18 @@ code {
   font-weight: 400;
   letter-spacing: -0.022em;
   margin-bottom: 0;
-}
+  z-index: 1;
+  
+} */
 
-.display-section .description {
-  font-size: 40px;
-  font-weight: 400;
-}
+/* .display-section .description {
+  font-size: 40px; */
+  /* font-weight: 400; */
+  /* z-index: 1;
+  
+} */
 
-.display-section .button {
+/* .display-section .button {
   background: -webkit-linear-gradient(90deg, #F87516 0%, #5E11FF 100%);
   color: #fff;
   cursor: pointer;
@@ -52,10 +54,12 @@ code {
   padding: 8px 16px;
   border-radius: 980px;
   margin: 15px;
-}
+  z-index: 1;
+  
+} */
 
 
-.display-section .links {
+/* .display-section .links {
   display: flex;
   justify-content: center;
   margin-top: 24px;
@@ -64,10 +68,12 @@ code {
   margin-right: 0;
   padding-left: 0;
   list-style: none;
-}
+  z-index: 1;
+  
+} */
 
 
-nav.nav-wrapper {
+/* nav.nav-wrapper {
   margin: 0;
   width: 100%;
   min-width: 320px;
@@ -85,9 +91,10 @@ nav .nav-content {
   width: 100%;
   max-width: 1024px;
   padding: 0 22px;
-}
+  z-index: 1;
+} */
 
-nav .list-styled {
+/* nav .list-styled {
   cursor: default;
   margin: 0 -9px;
   width: auto;
@@ -95,6 +102,7 @@ nav .list-styled {
   display: flex;
   justify-content: space-between;
   list-style: none;
+  z-index: 1;
 }
 
 nav .link-styled {
@@ -107,9 +115,10 @@ nav .link-styled {
   justify-content: center;
   height: 44px;
   color: #000000cc;
-}
+  z-index: 1;
+} */
 
-nav .button {
+/* nav .button {
   background: green;
   color: #fff;
   cursor: pointer;
@@ -122,7 +131,13 @@ nav .button {
   padding: 8px 16px;
   border-radius: 10px;
   margin: 30px 10px ;
-}
+  z-index: 1;
+} */
+
+/* .all .wrapper {
+  position: absolute; 
+  z-index: 1;
+}  */ 
 
 .jumbotron-section.wrapper {
   font-family: 'Sora';
@@ -134,7 +149,7 @@ nav .button {
   display: flex;
   flex-direction: column;
   padding-top: 60px;
-  position: relative; 
+  /* position: relative;  */
   z-index: 1;
 }
 
@@ -143,10 +158,12 @@ nav .button {
   font-size: 17px;
   font-weight: 400;
   letter-spacing: -0.022em;
+  z-index: 1;
 }
 
 .jumbotron-section .logo {
   width: 200px;
+  z-index: 1;
 }
 
 .jumbotron-section .text {
@@ -160,16 +177,19 @@ nav .button {
   font-size: 50px;
   font-weight: 600;
   margin-bottom: 18px;
+  z-index: 1;
 }
 
 .jumbotron-section .main {
   text-align: center;
+  z-index: 1;
 }
 
 
 .jumbotron-section .description {
   font-size: 50px;
   margin-top: 90px;
+  z-index: 1;
 }
 
 .jumbotron-section .links {
@@ -180,6 +200,7 @@ nav .button {
   margin-right: 0;
   padding-left: 0;
   list-style: none;
+  z-index: 1;
 }
 
 .jumbotron-section .button {
@@ -195,6 +216,7 @@ nav .button {
   padding: 8px 16px;
   border-radius: 10px;
   margin: 0 14px;
+  z-index: 1;
 }
 
 .jumbotron-section .link {
@@ -203,9 +225,10 @@ nav .button {
   font-size: 21px;
   font-weight: 400;
   cursor: pointer;
+  z-index: 1;
 }
 
-.sound-section.wrapper {
+/* .sound-section.wrapper {
   width: 100%;
   color: white;
   height: 50vh;
@@ -223,9 +246,9 @@ nav .button {
 
 .sound-section .title {
   color: white;
-  font-size: 30px;
+  font-size: 30px; */
   /* font-weight: 400; */
-  margin-bottom: 0;
+  /* margin-bottom: 0;
   text-align: center;
 }
 
@@ -236,9 +259,9 @@ nav .button {
   font-size: 48px;
   font-weight: 600;
   margin-bottom: 18px;
-}
+} */
 
-.sound-section .description {
+/* .sound-section .description {
   font-size: 21px;
   font-weight: 400;
 }
@@ -325,7 +348,7 @@ nav .button {
   margin-right: 0;
   padding-left: 0;
   list-style: none;
-}
+} */
 
 
 /*---------------------------------------------------------------------
@@ -335,17 +358,19 @@ nav .button {
 .theBall-outer {
   width: 20px;
   height: 20px;
+  z-index: 0;
 }
 .theBall-outer {
   position: fixed;
   top: -20px;
   left: -20px;
-  z-index: 9999999999999999999;
+  z-index: 0;
   pointer-events: none !important;
 }
 .theBall {
   position: absolute;
-  background-color: rgba(255, 114, 114, 0.8);
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(90deg, #F87516 0%, #5E11FF 100%);
   border-radius: 50%;
   -webkit-transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   -moz-transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -353,6 +378,11 @@ nav .button {
   -o-transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transform-origin: center center;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity .2s ease-out;
+  animation: colors 1s;
+  background: rgba(220, 50, 20, 0.6);
 }
 .zooming.theBall {
   background-color: #ff7272;
@@ -361,6 +391,19 @@ nav .button {
   -ms-transform: scale(2);
   -o-transform: scale(2);
   transform: scale(2);
+  z-index:0;
+  opacity: 1;
+  animation: colors 1s;
+  background: rgba(220, 50, 20, 0.6);
+}
+@keyframes colors {
+  5% {
+    background: rgba(0, 20, 220, 0.6)
+  }
+  100% {
+    background: rgba(220, 50, 20, 0.6)
+  }
+
 }
 
 /*---------------------------------------------------------------------
@@ -372,6 +415,7 @@ nav .button {
   left: 50%;
   width: 65px;
   margin-left: -50px;
+  z-index: 0;
 }
 .mouse-move a {
   letter-spacing: 2px;
@@ -383,6 +427,7 @@ nav .button {
   display: inline-block;
   border-radius: 900px;
   text-align: center;
+  z-index: 0;
 }
 .mouse-move .boom::before,
 .mouse-move .boom::after {
@@ -391,18 +436,23 @@ nav .button {
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 0;
 }
 .mouse-move .boom::before,
 .mouse-move .boom::after {
   content: "";
-  z-index: -1;
+  z-index: 0;
   margin: 0;
   border-radius: 900px;
   box-shadow: inset 0 0 0 2px;
   animation: clipMe 8s linear infinite;
+  animation: wobble 3s linear infinite;
+  opacity: 1;
+  transition: opacity .2s 1s ease-out;
 }
 .mouse-move .boom::before {
   animation-delay: -4s;
+  z-index: 0;
 }
 @keyframes clipMe {
   0%,
@@ -418,6 +468,7 @@ nav .button {
   75% {
     clip: rect(0px, 220px, 220px, 218px);
   }
+
 }
 .banner_canvas {
   position: fixed;
@@ -425,5 +476,8 @@ nav .button {
   left: 0;
   height: 100%;
   width: 100%;
+  z-index: 0;
 }
+
+
 
